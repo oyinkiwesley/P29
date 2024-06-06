@@ -16,10 +16,24 @@
 	</div>
     <h1>contact us:</h1>
     <div class="contactInfo">
-        <h2>phone: 09041143001</h2>
-        <h2>Instagram: P29 Studio</h2>
-        <h2>Email: wesleyoyinki6@gmail.com</h2>
-    </div>
+        <h2 id="textToCopy">phone: 09041143001</h2>
+        <h2 id="textToCopy">Instagram: P29 Studio</h2>
+        <h2 id="textToCopy">Email: wesleyoyinki6@gmail.com</h2>
+        <button id="copybtn" onclick="copy()">copy</button>
+    </div><br>
                     
 </body>
+<script type="text/javascript">
+	function copy() {
+    const txt = document.getElementById('textToCopy').textContent;
+    const btn = document.getElementById('copybtn');
+    navigator.clipboard.writeText(txt).then(function() {
+        console.log('Text copied');
+        alert('Text copied.');
+    }, function(err) {
+        console.error('Error copying text: ', err);
+    });
+}
+
+</script>
 </html>

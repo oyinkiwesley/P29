@@ -44,14 +44,17 @@ a{
 .navtxt:hover{
 	color:red;
 	font-size: 25px;
+	transition: 1s;
 }
 .navtxt1:hover{
 	color:red;
 	font-size: 25px;
+	transition: 1s;
 }
 .navtxt2:hover{
 	color:red;
 	font-size: 25px;
+	transition: 1s;
 }
 .headerimg{
 	height: 300px;
